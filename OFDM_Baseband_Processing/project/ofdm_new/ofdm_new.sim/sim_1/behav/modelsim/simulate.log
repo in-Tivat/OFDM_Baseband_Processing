@@ -1,0 +1,429 @@
+# do {OFDM_Tx_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L fifo_generator_v13_2_5 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L c_reg_fd_v12_0_6 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_pipe_v3_0_6 -L xbip_dsp48_addsub_v3_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L c_mux_bit_v12_0_6 -L c_shift_ram_v12_0_14 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L cmpy_v6_0_19 -L floating_point_v7_0_18 -L xfft_v9_1_5 -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.OFDM_Tx_tb xil_defaultlib.glbl 
+# Start time: 12:35:57 on Mar 24,2023
+# Loading xil_defaultlib.OFDM_Tx_tb
+# Loading xil_defaultlib.ofdm_tx_top
+# Loading xil_defaultlib.clk_wiz_0
+# Loading xil_defaultlib.clk_wiz_0_clk_wiz
+# Loading unisims_ver.IBUF
+# Loading unisims_ver.MMCME2_ADV
+# Loading unisims_ver.BUFG
+# Loading xil_defaultlib.symbol_train
+# Loading xil_defaultlib.STS_generator
+# Loading xil_defaultlib.LTS_generator
+# Loading xil_defaultlib.OFDM_Data_Modem
+# Loading xil_defaultlib.data_scramler
+# Loading xil_defaultlib.data_conv_code
+# Loading xil_defaultlib.data_puncturing
+# Loading xil_defaultlib.data_interleaver
+# Loading xil_defaultlib.sync_buffer
+# Loading xil_defaultlib.data_maping
+# Loading xil_defaultlib.data_pilot
+# Loading xil_defaultlib.spram_128
+# Loading xil_defaultlib.IFFT
+# Loading xil_defaultlib.fifo_generator_0
+# Loading xil_defaultlib.cp_add
+# Loading xil_defaultlib.spram_64
+# Loading xil_defaultlib.Trans_MCU
+# Loading xil_defaultlib.fifo_generator_1
+# Loading xil_defaultlib.glbl
+# Loading fifo_generator_v13_2_5.fifo_generator_vlog_beh
+# Loading fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER
+# Loading fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_as
+# Loading fifo_generator_v13_2_5.fifo_generator_v13_2_5_sync_stage
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading xil_defaultlib.xfft_0(xfft_0_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.math_real(body)
+# Loading ieee.std_logic_signed(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.fde(fde_v)
+# Loading unisim.fdre(fdre_v)
+# Loading unisim.muxcy(muxcy_v)
+# Loading unisim.xorcy(xorcy_v)
+# Loading unisim.lut6(lut6_v)
+# Loading unisim.srl16e(srl16e_v)
+# Loading unisim.lut3(lut3_v)
+# Loading unisim.vcc(vcc_v)
+# Loading xpm.vcomponents
+# Loading unisim.ramb18e1(ramb18e1_v)
+# Loading ieee.std_logic_textio(body)
+# Loading unisim.rb18_internal_vhdl(rb18_internal_vhdl_v)
+# Loading unisim.dsp48e1(dsp48e1_v)
+# Loading unisim.muxf7(muxf7_v)
+# ** Warning: Design size of 123061 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(0) has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(3 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(3 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(15 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(15 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>(4 downto 0), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>(4 downto 0).
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>.
+# ** Warning: (vsim-8684) No drivers exist on out port /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>/<protected>, and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /OFDM_Tx_tb/u_test/u_ifft/u_fft/U0/<protected>.
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+# WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+run -all

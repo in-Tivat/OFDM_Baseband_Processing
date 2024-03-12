@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="E:/network_shared_file/xilinx_project/ofdm_new/ofdm_new.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1165fs"></ZoomStartTime>
+      <ZoomEndTime time="3440fs"></ZoomEndTime>
+      <Cursor1Time time="1192fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="138"></NameColumnWidth>
+      <ValueColumnWidth column_width="62"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="29" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="u_test/u_Trans_MCU/Phy_Status" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Phy_Status</obj_property>
+      <obj_property name="ObjectShortName">Phy_Status</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Rate_Con" type="array">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Rate_Con[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Rate_Con[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Signal_Flag" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Signal_Flag</obj_property>
+      <obj_property name="ObjectShortName">Signal_Flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Tx_Clr" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Tx_Clr</obj_property>
+      <obj_property name="ObjectShortName">Tx_Clr</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Tx_Param" type="array">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Tx_Param[20:0]</obj_property>
+      <obj_property name="ObjectShortName">Tx_Param[20:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Txstart_Req" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Txstart_Req</obj_property>
+      <obj_property name="ObjectShortName">Txstart_Req</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Din" type="array">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Din[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Din[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Din_Req" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Din_Req</obj_property>
+      <obj_property name="ObjectShortName">Din_Req</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Din_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Din_Vld</obj_property>
+      <obj_property name="ObjectShortName">Din_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Modem_Bit" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Modem_Bit</obj_property>
+      <obj_property name="ObjectShortName">Modem_Bit</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_Trans_MCU/Modem_Bit_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/u_Trans_MCU/Modem_Bit_Vld</obj_property>
+      <obj_property name="ObjectShortName">Modem_Bit_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/M_Dout_Im" type="array">
+      <obj_property name="ElementShortName">u_test/M_Dout_Im[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M_Dout_Im[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/M_Dout_Re" type="array">
+      <obj_property name="ElementShortName">u_test/M_Dout_Re[7:0]</obj_property>
+      <obj_property name="ObjectShortName">M_Dout_Re[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/M_Dout_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/M_Dout_Vld</obj_property>
+      <obj_property name="ObjectShortName">M_Dout_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/IFFT_Out_Im" type="array">
+      <obj_property name="ElementShortName">u_test/IFFT_Out_Im[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IFFT_Out_Im[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/IFFT_Out_Re" type="array">
+      <obj_property name="ElementShortName">u_test/IFFT_Out_Re[7:0]</obj_property>
+      <obj_property name="ObjectShortName">IFFT_Out_Re[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/IFFT_Out_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/IFFT_Out_Vld</obj_property>
+      <obj_property name="ObjectShortName">IFFT_Out_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/Cp_Out_Im" type="array">
+      <obj_property name="ElementShortName">u_test/Cp_Out_Im[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cp_Out_Im[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/Cp_Out_Re" type="array">
+      <obj_property name="ElementShortName">u_test/Cp_Out_Re[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Cp_Out_Re[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/Cp_Out_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/Cp_Out_Vld</obj_property>
+      <obj_property name="ObjectShortName">Cp_Out_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_train/LTS_Im" type="array">
+      <obj_property name="ElementShortName">u_test/u_train/LTS_Im[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LTS_Im[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_train/LTS_Re" type="array">
+      <obj_property name="ElementShortName">u_test/u_train/LTS_Re[7:0]</obj_property>
+      <obj_property name="ObjectShortName">LTS_Re[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_train/LTS_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/u_train/LTS_Vld</obj_property>
+      <obj_property name="ObjectShortName">LTS_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_train/STS_Im" type="array">
+      <obj_property name="ElementShortName">u_test/u_train/STS_Im[7:0]</obj_property>
+      <obj_property name="ObjectShortName">STS_Im[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_train/STS_Re" type="array">
+      <obj_property name="ElementShortName">u_test/u_train/STS_Re[7:0]</obj_property>
+      <obj_property name="ObjectShortName">STS_Re[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/u_train/STS_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/u_train/STS_Vld</obj_property>
+      <obj_property name="ObjectShortName">STS_Vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/Dout_Im" type="array">
+      <obj_property name="ElementShortName">u_test/Dout_Im[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Dout_Im[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/Dout_Re" type="array">
+      <obj_property name="ElementShortName">u_test/Dout_Re[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Dout_Re[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_test/Dout_Vld" type="logic">
+      <obj_property name="ElementShortName">u_test/Dout_Vld</obj_property>
+      <obj_property name="ObjectShortName">Dout_Vld</obj_property>
+   </wvobject>
+</wave_config>

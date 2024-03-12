@@ -1,0 +1,66 @@
+# do {OFDM_Tx_tb_compile.do}
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
+# ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:54 on Mar 24,2023
+# vlog -incr -work xil_defaultlib "+incdir+../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0" ../../../../ofdm_new.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v ../../../../ofdm_new.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v 
+# -- Skipping module fifo_generator_1
+# -- Skipping module fifo_generator_0
+# 
+# Top level modules:
+# 	fifo_generator_1
+# 	fifo_generator_0
+# End time: 12:35:54 on Mar 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:54 on Mar 24,2023
+# vcom -93 -work xil_defaultlib ../../../../ofdm_new.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity xfft_0
+# -- Compiling architecture xfft_0_arch of xfft_0
+# End time: 12:35:54 on Mar 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:54 on Mar 24,2023
+# vlog -incr -work xil_defaultlib "+incdir+../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0" ../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v ../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v ../../../../ofdm_Transmitter_file/IFFT.V ../../../../ofdm_Transmitter_file/sequence_train/LTS_generator.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/OFDM_Data_Modem.v ../../../../ofdm_Transmitter_file/sequence_train/STS_generator.v ../../../../ofdm_Transmitter_file/Trans_MCU.v ../../../../ofdm_Transmitter_file/cp_add.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_conv_code.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_interleaver.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_maping.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_pilot.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_puncturing.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_scramler.v ../../../../ofdm_Transmitter_file/ofdm_tx_top.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_128.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_64.v ../../../../ofdm_Transmitter_file/sequence_train/symbol_train.v ../../../../ofdm_Transmitter_file/OFDM_Data_Modem/sync_buffer.v ../../../../ofdm_Transmitter_file/tb/OFDM_Tx_tb.v 
+# -- Skipping module clk_wiz_0_clk_wiz
+# -- Skipping module clk_wiz_0
+# -- Skipping module IFFT
+# -- Skipping module LTS_generator
+# -- Skipping module OFDM_Data_Modem
+# -- Skipping module STS_generator
+# -- Compiling module Trans_MCU
+# -- Compiling module cp_add
+# -- Skipping module data_conv_code
+# -- Compiling module data_interleaver
+# -- Skipping module data_maping
+# -- Skipping module data_pilot
+# -- Skipping module data_puncturing
+# -- Skipping module data_scramler
+# -- Compiling module ofdm_tx_top
+# -- Skipping module spram_128
+# -- Skipping module spram_64
+# -- Skipping module symbol_train
+# -- Skipping module sync_buffer
+# -- Skipping module OFDM_Tx_tb
+# 
+# Top level modules:
+# 	OFDM_Tx_tb
+# End time: 12:35:54 on Mar 24,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:35:54 on Mar 24,2023
+# vlog -work xil_defaultlib glbl.v 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 12:35:55 on Mar 24,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

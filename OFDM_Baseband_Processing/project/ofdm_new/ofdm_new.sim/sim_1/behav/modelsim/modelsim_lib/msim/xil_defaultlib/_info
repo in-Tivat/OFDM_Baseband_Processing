@@ -1,0 +1,585 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/network_shared_file/xilinx_project/ofdm_new/ofdm_new.sim/sim_1/behav/modelsim
+vclk_wiz_0
+Z1 !s10a 1679276510
+Z2 !s110 1679281395
+!i10b 1
+!s100 g<FHG0>JC@PF<2[PSKNVS3
+IFBUYm:TA7V1QCD6YF4PQg0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1679276510
+8../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v
+F../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v
+L0 73
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1679281395.000000
+Z7 !s107 ../../../../ofdm_Transmitter_file/tb/OFDM_Tx_tb.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/sync_buffer.v|../../../../ofdm_Transmitter_file/sequence_train/symbol_train.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_64.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_128.v|../../../../ofdm_Transmitter_file/ofdm_tx_top.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_scramler.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_puncturing.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_pilot.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_maping.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_interleaver.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_conv_code.v|../../../../ofdm_Transmitter_file/cp_add.v|../../../../ofdm_Transmitter_file/Trans_MCU.v|../../../../ofdm_Transmitter_file/sequence_train/STS_generator.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/OFDM_Data_Modem.v|../../../../ofdm_Transmitter_file/sequence_train/LTS_generator.v|../../../../ofdm_Transmitter_file/IFFT.V|../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v|../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v|
+Z8 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0|../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v|../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v|../../../../ofdm_Transmitter_file/IFFT.V|../../../../ofdm_Transmitter_file/sequence_train/LTS_generator.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/OFDM_Data_Modem.v|../../../../ofdm_Transmitter_file/sequence_train/STS_generator.v|../../../../ofdm_Transmitter_file/Trans_MCU.v|../../../../ofdm_Transmitter_file/cp_add.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_conv_code.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_interleaver.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_maping.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_pilot.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_puncturing.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_scramler.v|../../../../ofdm_Transmitter_file/ofdm_tx_top.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_128.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_64.v|../../../../ofdm_Transmitter_file/sequence_train/symbol_train.v|../../../../ofdm_Transmitter_file/OFDM_Data_Modem/sync_buffer.v|../../../../ofdm_Transmitter_file/tb/OFDM_Tx_tb.v|
+!i113 1
+Z9 o-work xil_defaultlib
+Z10 !s92 -work xil_defaultlib +incdir+../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0
+Z11 tCvgOpt 0
+vclk_wiz_0_clk_wiz
+R1
+R2
+!i10b 1
+!s100 c:;EkeDI4iPS5kco9BIME2
+IY]c`3bi^JMz9d7jiA1DWb0
+R3
+R0
+R4
+8../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v
+F../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v
+L0 71
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vcp_add
+Z12 !s110 1679632554
+!i10b 1
+!s100 NzA^91c6jBFnF;`UGmnBI1
+IGj?>Z:1JMgoAC=SzP@;[00
+R3
+R0
+w1679559424
+8../../../../ofdm_Transmitter_file/cp_add.v
+F../../../../ofdm_Transmitter_file/cp_add.v
+L0 1
+R5
+r1
+!s85 0
+31
+Z13 !s108 1679632554.000000
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vdata_conv_code
+!s10a 1678694195
+R2
+!i10b 1
+!s100 e6<dW_ABVVK7o_WI=SS6W0
+ICWhCWC=4FLBdko6<Cb@gb0
+R3
+R0
+w1678694195
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_conv_code.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_conv_code.v
+L0 28
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vdata_interleaver
+R12
+!i10b 1
+!s100 >EgZdhFHCcj=;?EQZYODj2
+Ibj`>FnAo]m0JVK5jGG@H@1
+R3
+R0
+w1679561389
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_interleaver.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_interleaver.v
+L0 23
+R5
+r1
+!s85 0
+31
+R13
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vdata_maping
+!s10a 1679277541
+R2
+!i10b 1
+!s100 1Pi7`KA19WY8>6Mch7B@_0
+IPEMB2ZoNEb3b_kiC<Y>OT3
+R3
+R0
+w1679277541
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_maping.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_maping.v
+L0 25
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vdata_pilot
+!s10a 1679276295
+R2
+!i10b 1
+!s100 5nM?Rz3o0@kGCQncoR`aG2
+IbK?GFH>Q8Qn3OF`jSbO2K0
+R3
+R0
+w1679276295
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_pilot.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_pilot.v
+L0 37
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vdata_puncturing
+!s10a 1679277322
+R2
+!i10b 1
+!s100 <_k_?zHE]ZzkM=^P^@1P53
+IEh:[Tk]A?J@3@E2[Nieo81
+R3
+R0
+w1679277322
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_puncturing.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_puncturing.v
+L0 35
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vdata_scramler
+!s10a 1679456744
+!s110 1679459492
+!i10b 1
+!s100 dP^adL6i`Rki>^ANK>D<50
+I=]lZcAjJc@nPW]=>Oz:141
+R3
+R0
+w1679456744
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_scramler.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_scramler.v
+L0 6
+R5
+r1
+!s85 0
+31
+!s108 1679459491.000000
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vfifo_generator_0
+!s10a 1679276622
+R2
+!i10b 1
+!s100 U2n<RPThPgabAe:]=92E;0
+IB97HH4>KVgeD>DCaPjdaP0
+R3
+R0
+w1679276622
+8../../../../ofdm_new.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v
+F../../../../ofdm_new.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v
+Z14 L0 56
+R5
+r1
+!s85 0
+31
+R6
+Z15 !s107 ../../../../ofdm_new.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v|../../../../ofdm_new.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v|
+Z16 !s90 -incr|-work|xil_defaultlib|+incdir+../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0|../../../../ofdm_new.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v|../../../../ofdm_new.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v|
+!i113 1
+R9
+R10
+R11
+vfifo_generator_1
+!s10a 1679278129
+R2
+!i10b 1
+!s100 ;2Q[MHB?Rn0:>ZJ4SDoHa2
+Ib4gHbK7H:BQ3ZTV7Rj4N82
+R3
+R0
+w1679278129
+8../../../../ofdm_new.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v
+F../../../../ofdm_new.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v
+R14
+R5
+r1
+!s85 0
+31
+R6
+R15
+R16
+!i113 1
+R9
+R10
+R11
+vglbl
+!s110 1679632555
+!i10b 1
+!s100 aGX4R92RO3^bD43HL2j:J2
+IB[@nz8b6fg9TA>4h[Y@ZG0
+R3
+R0
+w1605673889
+8glbl.v
+Fglbl.v
+L0 6
+R5
+r1
+!s85 0
+31
+R13
+!s107 glbl.v|
+!s90 -work|xil_defaultlib|glbl.v|
+!i113 1
+R9
+R11
+vIFFT
+!s10a 1679276802
+R2
+!i10b 1
+!s100 Gnlgc=3Rb`9L413g_ZUKm1
+I90jz3F@iXNCYgm39K2?Q`3
+R3
+R0
+w1679276802
+8../../../../ofdm_Transmitter_file/IFFT.V
+F../../../../ofdm_Transmitter_file/IFFT.V
+Z17 L0 21
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+n@i@f@f@t
+vLTS_generator
+!s10a 1678437710
+R2
+!i10b 1
+!s100 WzTe98PX22YmnMCBGiMRI1
+IlT<JA@1XWNWhO`z8J[U=z1
+R3
+R0
+w1678437710
+8../../../../ofdm_Transmitter_file/sequence_train/LTS_generator.v
+F../../../../ofdm_Transmitter_file/sequence_train/LTS_generator.v
+R17
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+n@l@t@s_generator
+vOFDM_Data_Modem
+!s10a 1679277063
+R2
+!i10b 1
+!s100 nC9Ba4H4iBAa@f^@4TZAa1
+IEVZYW9CB=YX>1FaAQFfN[2
+R3
+R0
+w1679277063
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/OFDM_Data_Modem.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/OFDM_Data_Modem.v
+L0 26
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+n@o@f@d@m_@data_@modem
+vOFDM_Tx_tb
+!s10a 1679558845
+!s110 1679558890
+!i10b 1
+!s100 K6?Lz6kdnZ:41I;4HW[Jk2
+ICWMM:k32QaTOV5jIdQUG50
+R3
+R0
+w1679558845
+8../../../../ofdm_Transmitter_file/tb/OFDM_Tx_tb.v
+F../../../../ofdm_Transmitter_file/tb/OFDM_Tx_tb.v
+Z18 L0 24
+R5
+r1
+!s85 0
+31
+!s108 1679558890.000000
+R7
+R8
+!i113 1
+R9
+R10
+R11
+n@o@f@d@m_@tx_tb
+vofdm_tx_top
+R12
+!i10b 1
+!s100 5D^k2gfNQ6Qd;Jo^G5CQ;0
+In@92V06LS>`NE6aWE;ZIH1
+R3
+R0
+w1679559415
+8../../../../ofdm_Transmitter_file/ofdm_tx_top.v
+F../../../../ofdm_Transmitter_file/ofdm_tx_top.v
+R17
+R5
+r1
+!s85 0
+31
+R13
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vspram_128
+!s10a 1679276192
+R2
+!i10b 1
+!s100 ZI^7<iTSQ4Ki3hf`[ihzF2
+I1SXng;FD7HQdP5@n^Z=jg3
+R3
+R0
+w1679276192
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_128.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_128.v
+R18
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vspram_64
+!s10a 1679275441
+R2
+!i10b 1
+!s100 7jgF0>]2I>j@H4:KfCT7J0
+ID:94IOlJ]Rc[AON>`87YX0
+R3
+R0
+w1679275441
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_64.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_64.v
+R18
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vSTS_generator
+!s10a 1678434915
+R2
+!i10b 1
+!s100 mdK0Mm;<z4bQR?3M0h0JJ3
+IV<`FTYUzAIRlala?zWPY[1
+R3
+R0
+w1678434915
+8../../../../ofdm_Transmitter_file/sequence_train/STS_generator.v
+F../../../../ofdm_Transmitter_file/sequence_train/STS_generator.v
+R17
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+n@s@t@s_generator
+vsymbol_train
+!s10a 1678431027
+R2
+!i10b 1
+!s100 HEdS?8G][D<]=32HI43Dd3
+Ib[j1z?aaSCW`EjVAN6=cl2
+R3
+R0
+w1678431027
+8../../../../ofdm_Transmitter_file/sequence_train/symbol_train.v
+F../../../../ofdm_Transmitter_file/sequence_train/symbol_train.v
+R17
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vsync_buffer
+!s10a 1678677747
+R2
+!i10b 1
+!s100 jJiNh1Mna?<nPE:GllTJG2
+IBk7I`1?0J400oUTQ;mncc1
+R3
+R0
+w1678677747
+8../../../../ofdm_Transmitter_file/OFDM_Data_Modem/sync_buffer.v
+F../../../../ofdm_Transmitter_file/OFDM_Data_Modem/sync_buffer.v
+R18
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 1
+R9
+R10
+R11
+vTrans_MCU
+R12
+!i10b 1
+!s100 NYQJ`e?;aE4cfIe8o9T@V0
+IaDELh4PIPRb1j=FC[F?1C0
+R3
+R0
+w1679632530
+8../../../../ofdm_Transmitter_file/Trans_MCU.v
+F../../../../ofdm_Transmitter_file/Trans_MCU.v
+R17
+R5
+r1
+!s85 0
+31
+R13
+R7
+R8
+!i113 1
+R9
+R10
+R11
+n@trans_@m@c@u
+Exfft_0
+Z19 w1679276700
+Z20 DPx11 xfft_v9_1_5 20 xfft_v9_1_5_viv_comp 0 22 ZIG;FZBAY@FdV>nOj5^Ob3
+Z21 DPx18 xbip_utils_v3_0_10 22 xbip_utils_v3_0_10_pkg 0 22 ^Y7d2L:QBm_=bAG?YTH0?1
+DEx11 xfft_v9_1_5 11 xfft_v9_1_5 0 22 iN0[;<_Db?4TLGRX:HS4O1
+Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z23 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z24 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z25 8../../../../ofdm_new.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd
+Z26 F../../../../ofdm_new.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd
+l0
+L59
+VIGSKJz@kLh63<hkDgBahB1
+!s100 E88FOV@64f;_[=a:hLmO@3
+Z27 OV;C;10.5b;63
+31
+R12
+!i10b 1
+R13
+Z28 !s90 -93|-work|xil_defaultlib|../../../../ofdm_new.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd|
+Z29 !s107 ../../../../ofdm_new.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd|
+!i113 1
+Z30 o-93 -work xil_defaultlib
+Z31 tExplicit 1 CvgOpt 0
+Axfft_0_arch
+R20
+R21
+R22
+R23
+R24
+DEx4 work 6 xfft_0 0 22 IGSKJz@kLh63<hkDgBahB1
+l182
+L83
+VJ2UXA35ZNH04V1hCSbTWh2
+!s100 d8^ihiKD0>oV97Xb_85;[3
+R27
+31
+R12
+!i10b 1
+R13
+R28
+R29
+!i113 1
+R30
+R31

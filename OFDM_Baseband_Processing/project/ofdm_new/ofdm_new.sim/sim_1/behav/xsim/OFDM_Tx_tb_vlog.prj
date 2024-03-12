@@ -1,0 +1,30 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0" \
+"../../../../ofdm_new.gen/sources_1/ip/fifo_generator_1/sim/fifo_generator_1.v" \
+"../../../../ofdm_new.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v" \
+"../../../../ofdm_new.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.v" \
+"../../../../ofdm_Transmitter_file/IFFT.V" \
+"../../../../ofdm_Transmitter_file/sequence_train/LTS_generator.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/OFDM_Data_Modem.v" \
+"../../../../ofdm_Transmitter_file/sequence_train/STS_generator.v" \
+"../../../../ofdm_Transmitter_file/Trans_MCU.v" \
+"../../../../ofdm_Transmitter_file/cp_add.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_conv_code.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_interleaver.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_maping.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_pilot.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_puncturing.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/data_scramler.v" \
+"../../../../ofdm_Transmitter_file/ofdm_tx_top.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_128.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/spram_64.v" \
+"../../../../ofdm_Transmitter_file/sequence_train/symbol_train.v" \
+"../../../../ofdm_Transmitter_file/OFDM_Data_Modem/sync_buffer.v" \
+"../../../../ofdm_Transmitter_file/tb/OFDM_Tx_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
